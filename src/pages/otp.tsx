@@ -11,14 +11,14 @@ export default function Otp() {
     const navigate = useNavigate();
     const timerRef = useRef(null);
 
-    // Countdown timer effect
+    // Countdown timer effect by using useEffect hooks
     useEffect(() => {
         if (countdown > 0) {
             timerRef.current = setTimeout(() => {
                 setCountdown(countdown - 1);
             }, 1000);
         } 
-        
+
         else {
             if (timerRef.current) {
                 clearTimeout(timerRef.current);
@@ -67,9 +67,7 @@ export default function Otp() {
 
     const handleSubmit = () => {
         if (valid) {
-            const otpCode = otp.join('');
-            console.log('OTP submitted:', otpCode);
-            // Logic xác thực OTP tại đây
+            otp.join('');
         }
     };
 
