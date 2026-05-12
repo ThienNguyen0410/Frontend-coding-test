@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 15px;
+    background-color: gainsboro;
+}
+
+h1 {
+    color: blue;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button {
+    width: 200px;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-button {
+    width: 200px;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 250px;
+}
